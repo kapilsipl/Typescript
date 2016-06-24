@@ -1,0 +1,13 @@
+<app-header></app-header>
+<h3>Welcome to Angular first demo {{name}}</h3>
+<!-- <p>Name: {{employees.name}}<br>
+Age: {{employees.age}}</p> -->
+<ul>
+	<li *ngFor="#employee of employees">
+		{{employee.name}}<br>
+		{{employee.age}}
+	</li>
+</ul>
+<div *ngIf="employees.length > 3">There are many employess</div>
+
+<app-footer></app-footer>
